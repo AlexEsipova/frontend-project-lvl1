@@ -6,4 +6,4 @@
 
 <a><img src="https://travis-ci.com/AlexEsipova/frontend-project-lvl1.svg?branch=master" /></a>
 
-<a href="https://asciinema.org/a/jPK2Ida6CObHe0tiOoYvlxkAg" target="_blank"><img src="https://asciinema.org/a/jPK2Ida6CObHe0tiOoYvlxkAg.svg" /></a>
+<a href="https://asciinema.org/a/jDEs1BWZ5RgNWL7EB58UdYf4L" target="_blank"><img src="https://asciinema.org/a/jDEs1BWZ5RgNWL7EB58UdYf4L.svg" /></a>

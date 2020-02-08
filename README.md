@@ -13,3 +13,7 @@
 <h1>Brain-calc</h1>
 
 <a href="https://asciinema.org/a/jJ1JHsYn3rM08K1BOzRB7hwAy" target="_blank"><img src="https://asciinema.org/a/jJ1JHsYn3rM08K1BOzRB7hwAy.svg" /></a>
+
+<h1>Brain-gcd</h1>
+
+<a href="https://asciinema.org/a/02heIfuSCRw0UGUbv71qDUZSn" target="_blank"><img src="https://asciinema.org/a/02heIfuSCRw0UGUbv71qDUZSn.svg" /></a>

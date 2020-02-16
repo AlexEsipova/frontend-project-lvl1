@@ -2,7 +2,7 @@ import _ from 'lodash';
 import gameEngine from '../constructor';
 
 const isPrime = (num) => {
-  if (num === 1) {
+  if (num < 2) {
     return false;
   }
   if (num === 2) {
@@ -15,10 +15,10 @@ const isPrime = (num) => {
   }
   return true;
 };
-const task = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
-const question = () => _.random(1, 100);
+const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const getRandomNum = () => _.random(1, 100);
 const getGameData = () => {
-  const actualQuestion = question();
+  const actualQuestion = getRandomNum();
   const correctAnswer = isPrime(actualQuestion) ? 'yes' : 'no';
   const gameData = [actualQuestion, correctAnswer];
   return gameData;

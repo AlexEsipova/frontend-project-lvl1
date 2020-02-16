@@ -1,20 +1,20 @@
 
 import readlineSync from 'readline-sync';
 
-const step = 3;
+const numberOfStep = 3;
 
 const gameEngine = (task, getGameData) => {
   console.log('Welcome to the Brain Games!');
-  console.log(`${task}`);
+  console.log(`${task}\n`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
-  for (let counter = 1; counter <= step; counter += 1) {
+  for (let counter = 1; counter <= numberOfStep; counter += 1) {
     const [actualQuestion, correctAnswer] = getGameData();
     console.log(`Question: ${actualQuestion}`);
     const answer = readlineSync.question('Your answer: ');
     if (correctAnswer === answer) {
       console.log('Correct!');
-      if (counter === 3) {
+      if (counter === numberOfStep) {
         console.log(`Congratulations, ${userName}!`);
       }
     } else {

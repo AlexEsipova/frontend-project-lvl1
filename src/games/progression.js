@@ -1,23 +1,23 @@
 import _ from 'lodash';
 import gameEngine from '../constructor';
 
-const task = 'What number is missing in the progression?\n';
-const values = () => _.random(1, 10);
-const valuesForI = () => _.random(1, 9);
+const task = 'What number is missing in the progression?';
+const getRandomNum = () => _.random(1, 10);
+const getRandomNumForChangingValueInArr = () => _.random(1, 9);
 
 
 const getGameData = () => {
-  const firstValue = values();
-  const step = values();
-  const iChange = valuesForI();
+  const firstValue = getRandomNum();
+  const step = getRandomNum();
+  const iChange = getRandomNumForChangingValueInArr();
   const arr = [firstValue];
-  for (let i = 1; i < 10; i += 1) {
-    arr[i] = arr[i - 1] + step;
+  for (let i = 0; i < 10; i += 1) {
+    arr[i] = firstValue + step * i;
   }
-  const correctAnswer = String(arr[iChange]);
+  const correctAnswer = arr[iChange];
   arr[iChange] = '..';
   const actualQuestion = arr.join(' ');
-  const gameData = [actualQuestion, correctAnswer];
+  const gameData = [actualQuestion, String(correctAnswer)];
   return gameData;
 };
 

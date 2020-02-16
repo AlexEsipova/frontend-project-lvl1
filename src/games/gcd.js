@@ -15,7 +15,9 @@ const getGameData = () => {
   const first = getRandomNum();
   const second = getRandomNum();
   const actualQuestion = `${first} ${second}`;
-  const correctAnswer = (first <= second) ? findGreatestCommonDiv(first, second) : findGreatestCommonDiv(second, first);
+  const correctAnswer = (first <= second)
+    ? findGreatestCommonDiv(first, second)
+    : findGreatestCommonDiv(second, first);
   const gameData = [actualQuestion, String(correctAnswer)];
   return gameData;
 };

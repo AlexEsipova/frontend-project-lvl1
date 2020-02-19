@@ -1,13 +1,13 @@
 import _ from 'lodash';
-import gameEngine from '../constructor';
+import getRandomNum from '../utils';
+import gameEngine from '..';
 
 const task = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 const getGameData = () => {
-  const getRamdomNum = () => _.random(1, 10);
   const getOperation = () => operations[_.random(0, operations.length - 1)];
-  const firstValue = getRamdomNum();
-  const secondValue = getRamdomNum();
+  const firstValue = getRandomNum();
+  const secondValue = getRandomNum();
   const actualOperation = getOperation();
   const actualQuestion = `${firstValue} ${actualOperation} ${secondValue}`;
   let correctAnswer;

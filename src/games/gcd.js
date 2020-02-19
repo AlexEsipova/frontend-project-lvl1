@@ -1,5 +1,5 @@
-import _ from 'lodash';
-import gameEngine from '../constructor';
+import getRandomNum from '../utils';
+import gameEngine from '..';
 
 const task = 'Find the greatest common divisor of given numbers.';
 const findGreatestCommonDiv = (num1, num2) => {
@@ -11,7 +11,6 @@ const findGreatestCommonDiv = (num1, num2) => {
 };
 
 const getGameData = () => {
-  const getRandomNum = () => _.random(1, 10);
   const first = getRandomNum();
   const second = getRandomNum();
   const actualQuestion = `${first} ${second}`;

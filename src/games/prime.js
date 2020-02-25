@@ -1,4 +1,4 @@
-import getRandomNum from '../utils';
+import { getRandomNum, checkTrueOrFalse } from '../utils';
 import gameEngine from '..';
 
 const isPrime = (num) => {
@@ -16,9 +16,10 @@ const isPrime = (num) => {
   return true;
 };
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const getGameData = () => {
   const actualQuestion = getRandomNum();
-  const correctAnswer = isPrime(actualQuestion) ? 'yes' : 'no';
+  const correctAnswer = checkTrueOrFalse(isPrime(actualQuestion));
   const gameData = [actualQuestion, correctAnswer];
   return gameData;
 };

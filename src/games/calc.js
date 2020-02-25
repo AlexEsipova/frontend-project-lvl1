@@ -4,6 +4,7 @@ import gameEngine from '..';
 
 const task = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
+
 const getGameData = () => {
   const getOperation = () => operations[_.random(0, operations.length - 1)];
   const firstValue = getRandomNum();

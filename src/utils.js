@@ -1,5 +1,9 @@
 import _ from 'lodash';
 
-const getRandomNum = () => _.random(1, 100);
-
-export default getRandomNum;
+export const getRandomNum = () => _.random(1, 100);
+export const checkTrueOrFalse = (func) => {
+  if (func === true) {
+    return 'yes';
+  }
+  return 'no';
+};

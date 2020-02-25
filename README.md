@@ -2,8 +2,6 @@
 
 <a href="https://codeclimate.com/github/AlexEsipova/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/00ec862626be91ec6054/maintainability" /></a>
 
-<a href="https://codeclimate.com/github/AlexEsipova/frontend-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/00ec862626be91ec6054/test_coverage" /></a>
-
 <a href="https://travis-ci.org/AlexEsipova/frontend-project-lvl1/builds/651158659"><img src="https://travis-ci.com/AlexEsipova/frontend-project-lvl1.svg?branch=master" /></a>
 
 # This project is called Brain-games and contains five mathematical mini-games.

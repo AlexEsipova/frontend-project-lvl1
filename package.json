@@ -43,7 +43,7 @@
     "eslint-plugin-import": "^2.19.1"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "readline-sync": "^1.4.10"
   }
 }
